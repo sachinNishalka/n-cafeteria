@@ -5,7 +5,7 @@ ButtonStyle PrimaryMaxButtonStyle() {
     shape: MaterialStateProperty.all(
         RoundedRectangleBorder(borderRadius: BorderRadius.circular(6.0))),
     minimumSize: MaterialStateProperty.all(
-      Size(327, 60),
+      Size(double.infinity, 60),
     ),
     textStyle: MaterialStateProperty.all(
       TextStyle(
