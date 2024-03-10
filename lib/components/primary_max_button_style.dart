@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
-ButtonStyle PrimaryMaxButtonStyle() {
+ButtonStyle PrimaryMaxButtonStyle(
+    {double? myButtonWidth, double? myButtonHeight}) {
   return ButtonStyle(
     shape: MaterialStateProperty.all(
         RoundedRectangleBorder(borderRadius: BorderRadius.circular(6.0))),
     minimumSize: MaterialStateProperty.all(
-      Size(double.infinity, 60),
+      Size(myButtonWidth ?? double.infinity, myButtonHeight ?? 60),
     ),
     textStyle: MaterialStateProperty.all(
       TextStyle(

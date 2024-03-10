@@ -20,10 +20,11 @@ TextStyle TextBoxHintTextGrayStyle() {
 
 TextStyle SecondaryTextHiperLinkStyle() {
   return TextStyle(
-      fontFamily: 'Poppins',
-      fontSize: 15.0,
-      fontWeight: FontWeight.w500,
-      color: Color(0xFF407EC7));
+    fontFamily: 'Poppins',
+    fontSize: 15.0,
+    fontWeight: FontWeight.w500,
+    color: Color(0xFF407EC7),
+  );
 }
 
 TextStyle SecondaryTextBlackStyle({double? fontSize}) {
@@ -40,4 +41,21 @@ TextStyle SecondaryTextWhiteStyle({double? fontSize}) {
       fontFamily: 'Poppins',
       fontSize: fontSize ?? 15.0,
       fontWeight: FontWeight.w500);
+}
+
+TextStyle SecondaryTextPricekStyle() {
+  return TextStyle(
+    fontFamily: 'Poppins-bold',
+    fontSize: 15.0,
+    fontWeight: FontWeight.w500,
+    color: Color(0xFF54D17A),
+  );
+}
+
+TextStyle SecondaryTextBlackStyleHeading({double? fontSize}) {
+  return TextStyle(
+      color: Colors.black,
+      fontFamily: 'Poppins-bold',
+      fontSize: fontSize ?? 20.0,
+      fontWeight: FontWeight.w600);
 }

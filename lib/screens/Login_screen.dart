@@ -29,7 +29,7 @@ class _loginScreenState extends State<loginScreen> {
           children: [
             Container(
               height: MediaQuery.of(context).size.height,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('assets/images/Login_cover.png'),
                   fit: BoxFit.cover,
@@ -40,7 +40,7 @@ class _loginScreenState extends State<loginScreen> {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Container(
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Color(0xFFF4F5F9),
                       borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(25),
@@ -69,7 +69,7 @@ class _loginScreenState extends State<loginScreen> {
                                   ),
                                 ],
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 25.0,
                               ),
                               Container(
@@ -80,7 +80,7 @@ class _loginScreenState extends State<loginScreen> {
                                   ),
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 10.0,
                               ),
                               Container(
